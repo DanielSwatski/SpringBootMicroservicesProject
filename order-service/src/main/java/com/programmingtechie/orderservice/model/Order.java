@@ -21,4 +21,13 @@ public class Order {
     private String orderNumber;
     @OneToMany(cascade = CascadeType.ALL)
     private List<OrderLineItems> orderLineItemsList;
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", orderNumber='" + orderNumber + '\'' +
+                ", orderLineItemsList=" + orderLineItemsList +
+                '}' + '\n';
+    }
 }
