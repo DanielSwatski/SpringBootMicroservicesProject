@@ -21,7 +21,7 @@ public class InventoryService {
     @SneakyThrows // dont use in prod
     public List<InventoryResponse> isInStock(List<String> skuCode) {
         log.info("Wait started");
-        Thread.sleep(10000);
+        //Thread.sleep(10000); // used for timeout showing
         log.info("Wait ended");
         return inventoryRepository.findBySkuCodeIn(skuCode).stream()
                 .map(inventory ->
