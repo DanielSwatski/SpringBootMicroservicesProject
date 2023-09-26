@@ -31,4 +31,14 @@ public class InventoryService {
                                 .build()
                 ).toList();
     }
+
+    public List<InventoryResponse> getAll() {
+        return inventoryRepository.findAll().stream()
+                .map(inventory ->
+                        InventoryResponse.builder()
+                                .skuCode(inventory.getSkuCode())
+                                .isInStock(inventory.getQuantity() > 0)
+                                .build()
+                ).toList();
+    }
 }
