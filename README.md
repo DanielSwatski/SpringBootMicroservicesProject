@@ -2,9 +2,6 @@ Product Inventory System with Micro-service Architecture
 
 This project is a recreation of a Product Inventory System using a micro-service architecture. It leverages various technologies to create a scalable and efficient system for managing product data. The key components and technologies used in this project include Netflix's Eureka for service registry, Spring Cloud Gateway for API call management, Keycloak for authentication, Apache Kafka for message management, and Docker for application deployment.
 
-Introduction
-
-The Product Inventory System with Micro-service Architecture is designed to provide a flexible and scalable solution for managing product information. It is built using micro-services that can be independently developed, deployed, and scaled. This architecture offers benefits such as improved maintainability, scalability, and fault tolerance.
 
 Technologies Used
 
